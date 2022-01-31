@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verificador de Nacionalidade Brasileira</h1>
+    <div id="box">
+        <strong>Digite seu País:</strong><input type="text" id="campo">
+        <button id="botao" onclick="verificador()">Verificar</button>
+    </div>
+    <div id="resultado"></div>
+    <script>
+        function verificador(){
+            let nac = window.document.getElementById('campo')
+            let res = window.document.getElementById('resultado')
+            teste = nac.value;
+            if(teste == "Brasil" || teste == "brasil"){
+                res.innerHTML = "Você é Brasileiro"
+            }else{
+                res.innerHTML = "Você é Estrangeiro"
+            }
+        }
+
+        let campo = window.document.getElementById('campo')
+
+        campo.addEventListener('keypress', function(campo){
+            let keyCode = (campo.keyCode ? campo.keyCode : campo.which);
+
+            if(keyCode > 47 && keyCode < 58){
+                campo.preventDefault();
+            }
+
+            if(!checkChar(campo)){
+                campo.preventDefault();
+            }
+            
+        })
+
+        function checkChar(campo){
+            let char = String.fromCharCode(campo.keyCode);
+            let pattern = '[a-zA-Z0-9]'
+
+            if (char.match(pattern)){
+                return true;
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

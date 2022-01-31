@@ -1,0 +1,132 @@
+body{
+    background-image: url(fundo.png);
+    user-select: none;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 2vw;
+    text-shadow: 2px 2px 2px #B3B3B3;
+    margin-top: 15vw;
+}
+
+#box{
+    background-color: rgba(62, 109, 77, 0.582);
+    padding: 0.5vw;
+    border: 2px solid black;
+    width: 28vw;
+    height: 40px;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+}
+strong{
+    font-size: 1vw;
+    margin-right: 0.2vw;
+}
+
+#campo{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5vw;
+    margin-right:6vw;
+}
+
+#botao{
+    background-color: rgb(202, 202, 202);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0.5vw;
+    font-size: 1vw;
+}
+
+#botao:hover{
+    cursor: pointer;
+}
+
+#resultado{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(62, 109, 77, 0.582);
+    padding: 0.5vw;
+    border: 2px solid black;
+    width: 28vw;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1vw;
+    font-weight: bold;
+    color: black;
+}
+
+@media screen and (max-width:768px){ 
+
+    h1{
+        font-size: 4vw;
+    }
+
+    #box{
+        padding: 1vw;
+        width:55vw;
+    }
+    strong{
+        font-size: 2.5vw;
+        margin-right: 0.2vw;
+    }
+    
+    #campo{
+        padding: 0.6vw;
+        margin-right:6vw;
+    }
+    
+    #botao{
+        padding: 1vw;
+        font-size: 2vw;
+    }
+    
+    
+    #resultado{
+        padding: 0.8vw;
+        width:55vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:368px){ 
+
+    h1{
+        font-size: 5vw;
+    }
+    
+    #box{
+        padding: 1vw;
+        width:93vw;
+        height: 7vw;
+    }
+    strong{
+        font-size: 4vw;
+        margin-right: 0.2vw;
+    }
+    
+    #campo{
+        padding: 0.6vw;
+        margin-right:6vw;
+    }
+    
+    #botao{
+        padding: 1.2vw;
+        font-size: 3vw;
+    }
+    
+    
+    #resultado{
+        padding: 0.8vw;
+        width:93vw;
+        font-size: 4vw;
+    }
+}
